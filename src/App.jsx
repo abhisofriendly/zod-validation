@@ -15,7 +15,9 @@ function App() {
     })
   })
 
-  const user = {
+  type User = z.infer<typeof userSchema>;
+
+  const user: User  = {
     firstName: 'Abhishek',
     email: 'contact@abhisofriendly.com',
     profileUrl: 'https://google.com',
@@ -30,7 +32,7 @@ function App() {
 
   return (
     <div>
-
+      zod validation in action
     </div>
   );
 }
